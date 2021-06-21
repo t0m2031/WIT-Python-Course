@@ -48,24 +48,3 @@ Rajasthan Royals
 Sample Output 3
 
 No'''
-
-
-
-
-
-import re
-
-def remove_Unwanted_Char(x):
-    temp_x = re.sub(r'[?|$|.|!]',r'',x)
-    filtered_x = re.sub(r'[^a-zA-Z ]',r'',temp_x.lower())
-    return filtered_x.replace(" ", "")
-
-def anagram(x,y):
-    xl = sorted(remove_Unwanted_Char(x))
-    yl = sorted(remove_Unwanted_Char(y))    
-    return "Yes" if xl == yl else "No"
-    
-x = input()
-y = input()
-
-print(anagram(x,y))
