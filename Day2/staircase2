@@ -1,0 +1,31 @@
+You are given a staircase with n steps. This means that you can 
+go from bottom to top in n steps. Write a function that counts
+the number of ways you can go from bottom to top
+Note that you can take one or three or five steps at a time.
+
+Sample testcase:
+n = 2
+Sample Output:
+1
+
+Explaination:
+Only way - 0 -> 1 -> 2 (One step at a time)
+
+
+Sample testcase 1:
+n = 1
+Sample Output 1:
+1
+
+Explaination:
+Only way - 0 -> 1 (One step at a time)
+
+More Examples:
+n = 3
+0 -> 1 -> 2 -> 3
+0 -> 3
+
+n = 4
+0 -> 1 -> 2 -> 3 -> 4
+0 -> 3 -> 4
+0 -> 1 -> 4
